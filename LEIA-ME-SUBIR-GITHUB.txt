@@ -1,0 +1,22 @@
+TH EMPREENDIMENTOS - SITE PRONTO PARA GITHUB PAGES
+
+1) Suba todos os arquivos na raiz do repositório.
+2) No GitHub: Settings > Pages > Deploy from branch > main > /root.
+3) Abra o link gerado pelo GitHub Pages.
+
+Estrutura:
+index.html
+404.html
+.nojekyll
+manifest.webmanifest
+assets/index.css
+assets/app.js
+assets/firebase.js
+assets/gemini.js
+assets/store.js
+assets/ui.js
+
+Firebase configurado no arquivo assets/firebase.js.
+Gemini configurável no arquivo assets/gemini.js.
+
+Importante: chave Gemini no front-end fica visível. Para produção real, use Firebase Functions.
