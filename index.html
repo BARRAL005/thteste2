@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#050506" />
+  <meta name="description" content="TH EMPREENDIMENTOS - Dashboard financeiro premium alimentado por Google Planilhas." />
+  <title>TH EMPREENDIMENTOS</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/index.css" />
+</head>
+<body>
+  <div id="app-shell" class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">TH</div>
+        <div>
+          <strong>TH</strong>
+          <span>EMPREENDIMENTOS</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Menu principal">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span> Dashboard</button>
+        <button class="nav-item" data-view="clientes"><span>👥</span> Clientes</button>
+        <button class="nav-item" data-view="emprestimos"><span>💼</span> Empréstimos</button>
+        <button class="nav-item" data-view="parcelas"><span>📅</span> Parcelas</button>
+        <button class="nav-item" data-view="cobrancas"><span>💬</span> Cobranças</button>
+        <button class="nav-item" data-view="fluxo"><span>📊</span> Fluxo de Caixa</button>
+        <button class="nav-item" data-view="cartoes"><span>💳</span> Cartões</button>
+        <button class="nav-item" data-view="relatorios"><span>📄</span> Resumo Mensal</button>
+        <button class="nav-item" data-view="config"><span>⚙️</span> Configurações</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="avatar">TH</div>
+        <div>
+          <strong>Administrador</strong>
+          <span>Planilha Backend</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button id="menuBtn" class="icon-btn" aria-label="Abrir menu">☰</button>
+        <div class="welcome">
+          <span>Bem-vindo de volta</span>
+          <h1>TH EMPREENDIMENTOS</h1>
+        </div>
+        <div class="top-actions">
+          <select id="monthSelect" class="select" aria-label="Selecionar mês"></select>
+          <button id="refreshBtn" class="gold-btn">Atualizar dados</button>
+          <button id="themeBtn" class="icon-btn" aria-label="Alternar tema">◐</button>
+        </div>
+      </header>
+
+      <section id="connectionBanner" class="connection-banner hidden">
+        <strong>Modo demonstração</strong>
+        <span>Configure a URL do Apps Script em <b>assets/config.js</b> para puxar os dados reais da planilha.</span>
+      </section>
+
+      <section id="viewHost" class="view-host"></section>
+    </main>
+  </div>
+
+  <nav class="mobile-tabs" aria-label="Menu mobile">
+    <button class="mobile-tab active" data-view="dashboard">⌂<span>Início</span></button>
+    <button class="mobile-tab" data-view="clientes">👥<span>Clientes</span></button>
+    <button class="mobile-tab" data-view="emprestimos">💼<span>Empréstimos</span></button>
+    <button class="mobile-tab" data-view="cobrancas">💬<span>Cobranças</span></button>
+    <button class="mobile-tab" data-view="relatorios">📄<span>PDF</span></button>
+  </nav>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/sample-data.js"></script>
+  <script src="assets/api.js"></script>
+  <script src="assets/charts.js"></script>
+  <script src="assets/pdf.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

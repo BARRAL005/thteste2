@@ -1,0 +1,12 @@
+{
+  "name": "TH EMPREENDIMENTOS",
+  "short_name": "TH Finance",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050506",
+  "theme_color": "#050506",
+  "description": "Dashboard financeiro premium alimentado por Google Planilhas.",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,21 @@
+TH EMPREENDIMENTOS - APP PRONTO PARA GITHUB PAGES
+
+COMO SUBIR:
+1. Extraia o ZIP.
+2. Envie todos os arquivos para a raiz do repositório GitHub.
+3. No GitHub: Settings > Pages > Deploy from branch > main > /(root).
+4. Aguarde alguns minutos e abra o link do GitHub Pages.
+
+PLANILHA COMO BACKEND:
+1. Abra docs/planilha-backend-modelo.xlsx e copie a estrutura para uma Google Planilha.
+2. Na Google Planilha: Extensões > Apps Script.
+3. Cole o código de backend/apps-script.gs.
+4. Clique em Implantar > Nova implantação > App da Web.
+5. Executar como: você. Acesso: Qualquer pessoa com o link.
+6. Copie a URL terminada em /exec.
+7. Cole em assets/config.js no campo SHEETS_API_URL.
+
+IMPORTANTE:
+- Este projeto não usa IA Gemini.
+- O app apenas lê a planilha e mostra o dashboard premium.
+- O botão "Gerar PDF" usa a função de impressão/salvar PDF do navegador.
